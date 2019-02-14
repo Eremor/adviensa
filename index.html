@@ -34,13 +34,16 @@
     <main class="page-main">
       <div class="wrapper">
         <section class="top">
+          <img src="./image/header-bg-desktop.jpg" alt="Man like superman" class="top__background">
           <div class="top__logo logo">
             <img src="./image/logotype.png" alt="Company's logo" class="logo__img logo__img--large">
           </div>
           <h1 class="top__title">Sieh die Werbung, die Du willst und verdiene noch Geld dazu!</h1>
           <p class="top__text">Finde für Dich relevante Waren, Dienstleistungen und werde belohnt dafür.</p>
           <button class="top__btn btn btn--secondary">Jetzt Anmelden</button>
-          <img src="./image/horn.png" alt="Image of a horn in a laptop" class="top__img">
+          <div class="top__footer">
+            <img src="./image/horn.png" alt="Image of a horn in a laptop" class="top__img">
+          </div>
         </section>
         <section class="how-it-work">
           <h2 class="how-it-work__title section-title">Wie funktioniert <span>Adviensa?</span></h2>
@@ -58,7 +61,7 @@
             <li class="steps-list__item">
               <p class="steps-list__value">III</p>
               <p class="steps-list__text">Freue Dich über verdientes Geld!</p>
-              <img src="./image/funktioniert-1.png" alt="Rejoice in the money received" class="steps-list__img">
+              <img src="./image/funktioniert-3.png" alt="Rejoice in the money received" class="steps-list__img">
             </li>
           </ul>
         </section>
@@ -66,16 +69,28 @@
           <h2 class="advantages__title  section-title">Deine <span>Vorteile<span></h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <p class="advantages__text">Bei Adviensa  kannst Du ohne großen Aufwand nebenbei Geld verdienen</p>
-              <img src="./image/advantages-1.png" alt="Earn effortlessly" class="advantages__img">
+              <div class="advantages__left">
+                <p class="advantages__text">Bei Adviensa  kannst Du ohne großen Aufwand nebenbei Geld verdienen</p>
+              </div>
+              <div class="advantages__right">
+                <img src="./image/advantages-1.png" alt="Earn effortlessly" class="advantages__img advantages__img--right">
+              </div>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text">Waren und Dienstleistungen entdecken, welche genua für Dich relevant sind.</p>
-              <img src="./image/advantages-2.png" alt="Identification of individual goods and services" class="advantages__img advantages__img--left">
+              <div class="advantages__left">
+                <p class="advantages__text">Waren und Dienstleistungen entdecken, welche genua für Dich relevant sind.</p>
+              </div>
+              <div class="advantages__right">
+                <img src="./image/advantages-2.png" alt="Identification of individual goods and services" class="advantages__img advantages__img--left">
+              </div>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text">Dein gesammeltes Geld in Bar auszahlen lassen</p>
-              <img src="./image/advantages-3.png" alt="Cashing money" class="advantages__img">
+              <div class="advantages__left">
+                <p class="advantages__text">Dein gesammeltes Geld in Bar auszahlen lassen</p>
+              </div>
+              <div class="advantages__right">
+                <img src="./image/advantages-3.png" alt="Cashing money" class="advantages__img advantages__img--right">
+              </div>
             </li>
           </ul>
         </section>
@@ -96,16 +111,18 @@
                 <img src="./image/reviews-monster-3.png" alt="Monster3" class="slider__img">
               </label>
             </div>
-            <div class="slider__inner">
-              <div class="slider__area">
-                <div class="slide__item">
-                  <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-                <div class="slide__item">
-                  <p class="slide__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                <div class="slide__item">
-                  <p class="slide__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+            <div class="slider__bubble">
+              <div class="slider__inner">
+                <div class="slider__area">
+                  <div class="slide__item">
+                    <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  </div>
+                  <div class="slide__item">
+                    <p class="slide__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  </div>
+                  <div class="slide__item">
+                    <p class="slide__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,11 +131,12 @@
         <section class="mission">
           <h2 class="mission__title section-title">Unsere <span>Mission<span></h2>
           <p class="mission__text">Unsere Mission ist, die Erfahrung davon, wie die Werbung empfangen wird, zu verbessern, die Werbung für die Anbieter attraktiver zu machen und Anbieter mit ihren relevanten Kunden zusammenzubringen.</p>
+          <img src="./image/mission-img.png" alt="supperman with horn" class="mission__img">
         </section>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="wrapper">
+      <div class="page-footer__wrapper wrapper">
         <div class="page-footer__logo logo">
           <img src="./image/logotype.png" alt="Company's logo" class="logo__img logo__img--footer">
           <b class="logo__text logo__text--column">Adviensa</b>
@@ -126,13 +144,13 @@
         <div class="page-footer__nav">
           <b class="page-footer__title">Sitemap</b>
           <ul class="page-footer__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">Über uns</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">FAQ</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">Kontakt</a>
             </li>
           </ul>
@@ -140,16 +158,16 @@
         <div class="page-footer__nav">
           <b class="page-footer__title">Legal</b>
           <ul class="page-footer__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">AGB</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">Datenschutz</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">Cookie</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--vert">
               <a href="#">Impressum</a>
             </li>
           </ul>
