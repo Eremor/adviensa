@@ -7,6 +7,8 @@
   </head>
   <body>
     <header class="page-header">
+      <label class="page-header__burger" for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
       <div class="page-header__wrapper wrapper">
         <div class="page-header__logo logo">
           <img src="./image/logotype.png" alt="Company's logo" class="logo__img logo__img--header">
@@ -35,7 +37,10 @@
       <div class="wrapper">
         <section class="top">
           <div class="top__background">
-            <img src="./image/header-bg-desktop.jpg" alt="Man like superman" class="top__background-img">
+            <picture>
+              <source media="(max-width: 916px)" srcset="./image/header-bg-mobile.jpg">
+              <img src="./image/header-bg-desktop.jpg" alt="Man like superman" class="top__background-img">
+            </picture>
           </div>
           <div class="top__logo logo">
             <img src="./image/logotype.png" alt="Company's logo" class="logo__img logo__img--large">
@@ -116,14 +121,14 @@
             <div class="slider__bubble">
               <div class="slider__inner">
                 <div class="slider__area">
-                  <div class="slide__item">
-                    <p class="slide__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div class="slider__item">
+                    <p class="slider__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   </div>
-                  <div class="slide__item">
-                    <p class="slide__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <div class="slider__item">
+                    <p class="slider__text">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                   </div>
-                  <div class="slide__item">
-                    <p class="slide__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                  <div class="slider__item">
+                    <p class="slider__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                   </div>
                 </div>
               </div>
