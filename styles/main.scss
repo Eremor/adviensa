@@ -593,6 +593,27 @@ li{
   }
 }
 
+@media only screen and (max-width: 1025px){
+  .top__background{
+    overflow-x: hidden;
+    width: 1024px;
+    height: 400vh;
+    left: 0;
+  }
+
+  .top__background-img{
+    transform: scale(1);
+  }
+
+  .top{
+    padding-top: 70px;
+  }
+
+  .how-it-work__title{
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 915px){
   .page-header__wrapper{
     justify-content: center;
@@ -783,7 +804,8 @@ li{
 
   .page-header__wrapper{
     transform: translateY(-300px);
-    transition: transform 1s ease;
+    transition: transform 0s ease;
+    display: none;
   }
 
   #toggle:checked ~ .page-header__wrapper{
@@ -794,11 +816,13 @@ li{
     position: absolute;
     left: 0;
     z-index: 10;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 100px;
     padding-left: 30px;
+    transition: transform 1s ease;
 
     & .page-header__logo{
       margin-left: 0;
@@ -859,6 +883,27 @@ li{
 
   .site-list__item--vert a{
     font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .top__background{
+    overflow-x: hidden;
+    width: 768px;
+    height: 400vh;
+    left: 0;
+  }
+
+  .top__background-img{
+    transform: scale(1);
+  }
+
+  .top{
+    padding-top: 70px;
+  }
+
+  .how-it-work__title{
+    margin-top: 30px;
   }
 }
 
@@ -978,7 +1023,42 @@ li{
   }
 }
 
+@media only screen and (max-width: 415px){
+  #toggle:checked ~ .page-header__wrapper{
+    width: 370px;
+  }
+
+  .top__background{
+    overflow-x: hidden;
+    width: 414px;
+    height: 400vh;
+    left: 0;
+  }
+
+  .top__background-img{
+    transform: scale(1);
+  }
+
+  .top{
+    padding-top: 70px;
+  }
+
+  .how-it-work__title{
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 390px){
+  #toggle:checked ~ .page-header__wrapper{
+    width: 300px;
+  }
+
+  .top__background{
+    overflow-x: hidden;
+    width: 420px;
+    height: 400vh;
+  }
+
   .steps-list__item{
     width: 300px;
     background-size: 300px 450px;
@@ -1003,14 +1083,69 @@ li{
   }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 376px){
+  #toggle:checked ~ .page-header__wrapper{
+    width: 325px;
+  }
+
+  .top__background{
+    overflow-x: hidden;
+    width: 375px;
+    height: 400vh;
+    left: 0;
+  }
+
+  .top__background-img{
+    transform: scale(1);
+  }
+
+  .top{
+    padding-top: 70px;
+  }
+
+  .how-it-work__title{
+    margin-top: 30px;
+  }
+
+  .page-footer{
+    padding: 10px;
+  }
+
+  .mission__img{
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 321px){
+  #toggle:checked ~ .page-header__wrapper{
+    width: 280px;
+
+    & .main-nav{
+      width: 60%;
+    }
+  }
+
   .btn--secondary{
     padding: 12px 35px;
     font-size: 1em;
   }
 
+  .top{
+    padding-top: 70px;
+  }
+
+  .top__background{
+    overflow-x: hidden;
+    width: 382px;
+    height: 400vh;
+  }
+
   .top__img{
     transform: scale(0.4);
+  }
+
+  .how-it-work__title{
+    margin-top: 30px;
   }
 
   .steps-list__item{
@@ -1022,7 +1157,7 @@ li{
   }
 
   .page-footer{
-    padding: 20px 10px;
+    padding: 20px;
   }
 
   .logo__img--footer{
