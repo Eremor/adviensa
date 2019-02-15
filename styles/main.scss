@@ -927,6 +927,7 @@ li{
   .slider__bubble{
     width: 250px;
     margin-top: 35px;
+    padding: 30px 15px;
 
     &::before{
       width: 25px;
@@ -974,5 +975,62 @@ li{
 
   .site-list__item--vert a{
     margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .steps-list__item{
+    width: 300px;
+    background-size: 300px 450px;
+
+    & .steps-list__value{
+      margin-top: 60px;
+      margin-bottom: 25px;
+    }
+
+    & .steps-list__text{
+      font-size: 1em;
+      width: 80%;
+    }
+
+    & .steps-list__img{
+      transform: scale(0.75);
+    }
+  }
+
+  .how-it-work__title{
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .btn--secondary{
+    padding: 12px 35px;
+    font-size: 1em;
+  }
+
+  .top__img{
+    transform: scale(0.4);
+  }
+
+  .steps-list__item{
+    padding: 0;
+  }
+
+  .mission__img{
+    transform: scale(0.5);
+  }
+
+  .page-footer{
+    padding: 20px 10px;
+  }
+
+  .logo__img--footer{
+    width: 45px;
+    height: 32px;
+  }
+
+  .site-list__item--vert a{
+    margin: 0 5px;
   }
 }
