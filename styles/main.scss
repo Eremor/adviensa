@@ -526,9 +526,11 @@ li{
   }
 }
 
-@media only screen and (max-width: 1600px){
+@media only screen and (max-width: 1601px){
   .top__background{
-    left: -7%;
+    left: -8%;
+    overflow-x: hidden;
+    width: 1728px;
   }
 
   .top__img{
@@ -536,9 +538,14 @@ li{
   }
 }
 
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1501px){
   .top{
     padding-top: 20px;
+  }
+
+  .top__background{
+    overflow-x: hidden;
+    width: 1620px;
   }
 
   .top__title{
@@ -552,9 +559,10 @@ li{
 
 @media only screen and (max-width: 1367px){
   .top__background{
-    left: -10%;
+    left: -15%;
     overflow-x: hidden;
     width: 1502px;
+    height: 600vh;
   }
 
   .top__title{
@@ -610,6 +618,7 @@ li{
   .top{
     padding-top: 70px;
   }
+
   .top__background{
     overflow-x: hidden;
     width: 1024px;
