@@ -175,7 +175,6 @@ li{
   }
 }
 
-
 .top__logo{
   margin-bottom: 60px;
 }
@@ -201,6 +200,8 @@ li{
 }
 
 .top__footer{
+  display: flex;
+  justify-content: center;
   position: relative;
   height: 350px;
   width: 100%;
@@ -216,7 +217,7 @@ li{
 
 /*How it work*/
 .how-it-work__title{
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 
 .how-it-work__list{
@@ -225,7 +226,7 @@ li{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .steps-list__item{
@@ -447,25 +448,26 @@ li{
 
 /*Footer*/
 .page-footer{
-  background-image: url('../image/footer-bg.jpg');
+  background-image: url('../image/footer-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 20px 0;
 }
 
 .page-footer__wrapper{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
+  padding-top: 40px;
 }
 
 .page-footer__logo{
-  margin: 70px 0;
-  margin-left: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;
   justify-content: center;
   align-items: center;
+  margin: 0 30px;
 }
 
 .logo__img--footer{
@@ -479,8 +481,7 @@ li{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 200px;
-  margin-top: 50px;
+  margin: 0 30px;
 }
 
 .page-footer__title{
@@ -549,6 +550,18 @@ li{
   }
 }
 
+@media only screen and (max-width: 1367px){
+  .top__background{
+    left: -10%;
+    overflow-x: hidden;
+    width: 1502px;
+  }
+
+  .top__title{
+    width: 65%;
+  }
+}
+
 @media only screen and (max-width: 1171px){
   .wrapper{
     max-width: 900px;
@@ -594,6 +607,9 @@ li{
 }
 
 @media only screen and (max-width: 1025px){
+  .top{
+    padding-top: 70px;
+  }
   .top__background{
     overflow-x: hidden;
     width: 1024px;
@@ -605,8 +621,10 @@ li{
     transform: scale(1);
   }
 
-  .top{
-    padding-top: 70px;
+  .top__img{
+    position: relative;
+    bottom: 0;
+    right: 0;
   }
 
   .how-it-work__title{
@@ -651,21 +669,16 @@ li{
     width: 100%;
   }
 
-  .top__img{
-    position: relative;
-    bottom: 0;
-    right: 0;
-  }
-
   .advantages__item{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 0;
+    padding: 0;
   }
 
   .advantages__left{
     width: 70%;
+    order: 1;
   }
 
   .advantages__right{
@@ -673,7 +686,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 450px;
   }
 
   .advantages__img{
@@ -690,7 +703,11 @@ li{
   }
 
   .advantages__item:nth-child(2) .advantages__left{
-    order: -1;
+    order: 1;
+  }
+
+  .reviews__title{
+    margin: 50px 0;
   }
 
   .mission{
@@ -698,6 +715,11 @@ li{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 0;
+  }
+
+  .mission__title{
+    margin-bottom: 30px;
   }
 
   .mission__text{
@@ -712,31 +734,38 @@ li{
   }
 
   .page-footer{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
     padding: 20px 50px;
   }
 
   .page-footer__wrapper{
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .page-footer__logo{
     margin: 0;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo__img--footer{
+    width: 40px;
+    height: 25px;
+    margin: 0;
   }
 
   .page-footer__nav{
     margin: 0;
     margin-bottom: 20px;
-    flex-direction: row;
     align-items: center;
   }
 
   .page-footer__title{
     margin: 0;
-    margin-right: 20px;
+    margin-bottom: 10px;
   }
 
   .page-footer__list{
@@ -905,6 +934,11 @@ li{
   .how-it-work__title{
     margin-top: 30px;
   }
+
+  .advantages__right{
+    height: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 485px){
@@ -930,10 +964,6 @@ li{
 
   .advantages__text{
     font-size: 1.125em;
-  }
-
-  .advantages__right{
-    height: 50%;
   }
 
   .advantages__img{
@@ -1014,10 +1044,6 @@ li{
     transform: scale(0.7);
   }
 
-  .page-footer__title{
-    margin-right: 10px;
-  }
-
   .site-list__item--vert a{
     margin: 0 10px;
   }
@@ -1061,10 +1087,12 @@ li{
 
   .steps-list__item{
     width: 300px;
+    height: 480px;
     background-size: 300px 450px;
+    padding: 0 10px;
 
     & .steps-list__value{
-      margin-top: 60px;
+      margin-top: 50px;
       margin-bottom: 25px;
     }
 
@@ -1104,15 +1132,19 @@ li{
   }
 
   .how-it-work__title{
-    margin-top: 30px;
+    margin-top: 60px;
   }
 
   .page-footer{
     padding: 10px;
   }
 
+  .mission__text{
+    margin: 0;
+  }
+
   .mission__img{
-    transform: scale(0.5);
+    height: 350px;
   }
 }
 
